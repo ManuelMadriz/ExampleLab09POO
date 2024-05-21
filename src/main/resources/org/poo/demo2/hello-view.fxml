@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="640.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.poo.demo2.FormController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+   <HBox prefHeight="267.0" prefWidth="600.0">
+      <children>
+         <VBox prefHeight="245.0" prefWidth="300.0" spacing="20.0">
+            <children>
+               <Label text="Seleccionar opciones multiples" />
+               <CheckBox fx:id="chk1" mnemonicParsing="false" text="Opcion 1" />
+               <CheckBox fx:id="chk2" mnemonicParsing="false" text="Opcion 2" />
+               <CheckBox fx:id="chk3" mnemonicParsing="false" text="Opcion 3" />
+               <Button mnemonicParsing="false" onAction="#onChkButtonClick" text="Guardar" />
+               <Label fx:id="lbResultado2" maxHeight="70.0" minHeight="10.0" prefHeight="10.0" prefWidth="237.0" wrapText="true" VBox.vgrow="ALWAYS" />
+            </children>
+         </VBox>
+         <VBox prefHeight="210.0" prefWidth="300.0" spacing="20.0">
+            <children>
+               <Label text="Seleccionar solo una opcion" />
+               <RadioButton fx:id="rd1" mnemonicParsing="false" text="Opcion 1" />
+               <RadioButton fx:id="rd2" mnemonicParsing="false" text="Opcion 2" />
+               <RadioButton fx:id="rd3" mnemonicParsing="false" text="Opcion 3" />
+               <Button mnemonicParsing="false" onAction="#onRdButtonClick" text="Guardar" />
+               <Label fx:id="lbResultado1" wrapText="true" />
+            </children>
+         </VBox>
+      </children>
+   </HBox>
+</VBox>
